@@ -1,3 +1,4 @@
+
 -- Visao materializada para consulta de palavras semelhantes
 -- Usa simple fazer a tabela de consulta completa por estar em multiplos idiomas
 CREATE MATERIALIZED VIEW unique_lexeme AS
@@ -24,6 +25,6 @@ REFRESH MATERIALIZED VIEW unique_lexeme;
 
 SELECT word
 FROM unique_lexeme
-WHERE similarity(word, 'samething') > 0.5
-ORDER BY word <-> 'samething'
+WHERE similarity(word, 'endangerggd') > 0.5
+ORDER BY word <-> 'endangerggd'
 LIMIT 1;

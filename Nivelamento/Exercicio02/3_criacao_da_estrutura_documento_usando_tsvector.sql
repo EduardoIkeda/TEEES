@@ -1,5 +1,5 @@
--- Criação da estrutura do documento feita anteriormente só que usando tsvector
--- para indexar os radicais das palavras
+-- Criação da estrutura do documento feita anteriormente só que 
+-- usando tsvector para indexar os radicais das palavras
 
 SELECT to_tsvector(post.title) ||
     to_tsvector(post.content) ||

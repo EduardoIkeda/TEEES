@@ -1,5 +1,7 @@
 -- Faz a criação da estrutura documento concanenando as informações
 -- de titulo, conteudo e autor
+-- usa o coalesce para evitar que o campo de tags seja nulo
+-- e o string_agg para concatenar as tags em uma string separada por espaço
 
 SELECT post.title || ' ' || post.content || ' ' ||
    	 author.name || ' ' ||
