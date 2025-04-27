@@ -1,0 +1,6 @@
+# requirements.txt
+onnxruntime
+lark
+langchain-chroma
+protobuf>=3.20.3,<4.21.0
+numpy<2.0.0
